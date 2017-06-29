@@ -4,7 +4,8 @@
 'atom-workspace:not(.editor)':
   # conflicts insert-mode ctrl-w and ctr-w in mini editor, so comment out by default
   # 'ctrl-w z': 'vim-mode-plus:maximize-pane'
-  'cmd-enter': 'vim-mode-plus:maximize-pane'
+  # conflicts narrator in win32-native
+  # 'cmd-enter': 'vim-mode-plus:maximize-pane'
 
 # all
 # -------------------------
