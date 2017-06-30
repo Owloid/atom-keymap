@@ -1,8 +1,10 @@
 {
   ".platform-darwin atom-text-editor": {
-    "alt-cmd-q": "autoflow:reflow-selection"
+    # "alt-cmd-q": "autoflow:reflow-selection"
+    "alt-cmd-q": "unset!"
   },
   ".platform-win32 atom-text-editor, .platform-linux atom-text-editor": {
-    "ctrl-shift-q": "autoflow:reflow-selection"
+    # "ctrl-shift-q": "autoflow:reflow-selection"
+    "ctrl-shift-q": "unset!"
   }
 }
