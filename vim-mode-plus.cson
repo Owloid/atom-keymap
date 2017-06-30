@@ -21,8 +21,8 @@
 
 # all except normal
 # -------------------------
-'.platform-darwin atom-text-editor.vim-mode-plus:not(.normal-mode)':
-  'ctrl-c': 'vim-mode-plus:activate-normal-mode'
+# '.platform-darwin atom-text-editor.vim-mode-plus:not(.normal-mode)':
+#   'ctrl-c': 'vim-mode-plus:activate-normal-mode'
 
 # insert
 # -------------------------
@@ -63,6 +63,7 @@
   'up': 'vim-mode-plus:move-up'
   'down': 'vim-mode-plus:move-down'
 
+  # what does it do?
   'g k': 'vim-mode-plus:move-up-screen'
   'g j': 'vim-mode-plus:move-down-screen'
 
@@ -89,22 +90,22 @@
   '}': 'vim-mode-plus:move-to-next-paragraph'
   '{': 'vim-mode-plus:move-to-previous-paragraph'
   '0': 'vim-mode-plus:move-to-beginning-of-line'
-  '|': 'vim-mode-plus:move-to-column'
+  # '|': 'vim-mode-plus:move-to-column'
   'home': 'vim-mode-plus:move-to-beginning-of-line'
   '^': 'vim-mode-plus:move-to-first-character-of-line'
-  '_': 'vim-mode-plus:move-to-first-character-of-line-and-down'
+  # '_': 'vim-mode-plus:move-to-first-character-of-line-and-down'
   '$': 'vim-mode-plus:move-to-last-character-of-line'
   'end': 'vim-mode-plus:move-to-last-character-of-line'
-  'g _': 'vim-mode-plus:move-to-last-nonblank-character-of-line-and-down'
+  # 'g _': 'vim-mode-plus:move-to-last-nonblank-character-of-line-and-down'
   '-': 'vim-mode-plus:move-to-first-character-of-line-up'
   '+': 'vim-mode-plus:move-to-first-character-of-line-down'
   'enter': 'vim-mode-plus:move-to-first-character-of-line-down'
 
   # scroll
   'ctrl-u': 'vim-mode-plus:scroll-half-screen-up'
-  'ctrl-b': 'vim-mode-plus:scroll-full-screen-up'
+  # 'ctrl-b': 'vim-mode-plus:scroll-full-screen-up'
   'ctrl-d': 'vim-mode-plus:scroll-half-screen-down'
-  'ctrl-f': 'vim-mode-plus:scroll-full-screen-down'
+  # 'ctrl-f': 'vim-mode-plus:scroll-full-screen-down'
   'ctrl-e': 'vim-mode-plus:scroll-down'
   'ctrl-y': 'vim-mode-plus:scroll-up'
 
@@ -125,9 +126,9 @@
   'C': 'vim-mode-plus:change-to-last-character-of-line'
   'S': 'vim-mode-plus:substitute-line'
   'r': 'vim-mode-plus:replace'
-  'g o': 'vim-mode-plus:toggle-preset-occurrence'
-  'g O': 'vim-mode-plus:toggle-preset-subword-occurrence'
-  'g .': 'vim-mode-plus:add-preset-occurrence-from-last-occurrence-pattern'
+  # 'g o': 'vim-mode-plus:toggle-preset-occurrence'
+  # 'g O': 'vim-mode-plus:toggle-preset-subword-occurrence'
+  # 'g .': 'vim-mode-plus:add-preset-occurrence-from-last-occurrence-pattern'
 
   # '_': 'vim-mode-plus:replace-with-register'
   'g I': 'vim-mode-plus:insert-at-beginning-of-line'
@@ -142,7 +143,7 @@
   'p': 'vim-mode-plus:put-after'
 
   # String transformation
-  '~': 'vim-mode-plus:toggle-case-and-move-right'
+  # '~': 'vim-mode-plus:toggle-case-and-move-right'
   'g ~': 'vim-mode-plus:toggle-case'
   'g U': 'vim-mode-plus:upper-case'
   'g u': 'vim-mode-plus:lower-case'
@@ -168,38 +169,65 @@
   'g ctrl-a': 'vim-mode-plus:increment-number' # experimental
   'g ctrl-x': 'vim-mode-plus:decrement-number' # experimental
 
-  'ctrl-w ctrl-h': 'window:focus-pane-on-left'
-  'ctrl-w h': 'window:focus-pane-on-left'
-  'ctrl-w left': 'window:focus-pane-on-left'
-  'ctrl-w ctrl-l': 'window:focus-pane-on-right'
-  'ctrl-w l': 'window:focus-pane-on-right'
-  'ctrl-w right': 'window:focus-pane-on-right'
-  'ctrl-w ctrl-k': 'window:focus-pane-above'
-  'ctrl-w k': 'window:focus-pane-above'
-  'ctrl-w up': 'window:focus-pane-above'
-  'ctrl-w ctrl-j': 'window:focus-pane-below'
-  'ctrl-w j': 'window:focus-pane-below'
-  'ctrl-w down': 'window:focus-pane-below'
-  'ctrl-w ctrl-w': 'window:focus-next-pane'
-  'ctrl-w w': 'window:focus-next-pane'
-  'ctrl-w ctrl-p': 'window:focus-previous-pane'
-  'ctrl-w p': 'window:focus-previous-pane'
+  # 'ctrl-w ctrl-h': 'window:focus-pane-on-left'
+  # 'ctrl-w h': 'window:focus-pane-on-left'
+  # 'ctrl-w left': 'window:focus-pane-on-left'
+  # 'ctrl-w ctrl-l': 'window:focus-pane-on-right'
+  # 'ctrl-w l': 'window:focus-pane-on-right'
+  # 'ctrl-w right': 'window:focus-pane-on-right'
+  # 'ctrl-w ctrl-k': 'window:focus-pane-above'
+  # 'ctrl-w k': 'window:focus-pane-above'
+  # 'ctrl-w up': 'window:focus-pane-above'
+  # 'ctrl-w ctrl-j': 'window:focus-pane-below'
+  # 'ctrl-w j': 'window:focus-pane-below'
+  # 'ctrl-w down': 'window:focus-pane-below'
+  # 'ctrl-w ctrl-w': 'window:focus-next-pane'
+  # 'ctrl-w w': 'window:focus-next-pane'
+  # 'ctrl-w ctrl-p': 'window:focus-previous-pane'
+  # 'ctrl-w p': 'window:focus-previous-pane'
+  'ctrl-q ctrl-h': 'window:focus-pane-on-left'
+  'ctrl-q h': 'window:focus-pane-on-left'
+  'ctrl-q left': 'window:focus-pane-on-left'
+  'ctrl-q ctrl-l': 'window:focus-pane-on-right'
+  'ctrl-q l': 'window:focus-pane-on-right'
+  'ctrl-q right': 'window:focus-pane-on-right'
+  'ctrl-q ctrl-k': 'window:focus-pane-above'
+  'ctrl-q k': 'window:focus-pane-above'
+  'ctrl-q up': 'window:focus-pane-above'
+  'ctrl-q ctrl-j': 'window:focus-pane-below'
+  'ctrl-q j': 'window:focus-pane-below'
+  'ctrl-q down': 'window:focus-pane-below'
+  'ctrl-q ctrl-w': 'window:focus-next-pane'
+  'ctrl-q w': 'window:focus-next-pane'
+  'ctrl-q ctrl-p': 'window:focus-previous-pane'
+  'ctrl-q p': 'window:focus-previous-pane'
 
   # From v1.6.0
-  'ctrl-w ctrl-v': 'pane:split-right-and-copy-active-item'
-  'ctrl-w v': 'pane:split-right-and-copy-active-item'
-  'ctrl-w ctrl-s': 'pane:split-down-and-copy-active-item'
-  'ctrl-w s': 'pane:split-down-and-copy-active-item'
+  # 'ctrl-w ctrl-v': 'pane:split-right-and-copy-active-item'
+  # 'ctrl-w v': 'pane:split-right-and-copy-active-item'
+  # 'ctrl-w ctrl-s': 'pane:split-down-and-copy-active-item'
+  # 'ctrl-w s': 'pane:split-down-and-copy-active-item'
+  'ctrl-q ctrl-v': 'pane:split-right-and-copy-active-item'
+  'ctrl-q v': 'pane:split-right-and-copy-active-item'
+  'ctrl-q ctrl-s': 'pane:split-down-and-copy-active-item'
+  'ctrl-q s': 'pane:split-down-and-copy-active-item'
 
-  'ctrl-w z': 'vim-mode-plus:maximize-pane'
-  'cmd-enter': 'vim-mode-plus:maximize-pane'
+  # 'ctrl-w z': 'vim-mode-plus:maximize-pane'
+  'ctrl-q z': 'vim-mode-plus:maximize-pane'
+  # 'cmd-enter': 'vim-mode-plus:maximize-pane'
 
-  'ctrl-w =': 'vim-mode-plus:equalize-panes'
+  # 'ctrl-w =': 'vim-mode-plus:equalize-panes'
+  'ctrl-q =': 'vim-mode-plus:equalize-panes'
 
-  'ctrl-w ctrl-c': 'pane:close'
-  'ctrl-w c': 'pane:close'
-  'ctrl-w ctrl-q': 'core:close'
-  'ctrl-w q': 'core:close'
+
+  # 'ctrl-w ctrl-c': 'pane:close'
+  # 'ctrl-w c': 'pane:close'
+  # 'ctrl-w ctrl-q': 'core:close'
+  # 'ctrl-w q': 'core:close'
+  'ctrl-q ctrl-c': 'pane:close'
+  'ctrl-q c': 'pane:close'
+  'ctrl-q ctrl-q': 'core:close'
+  'ctrl-q q': 'core:close'
   'g t': 'vim-mode-plus:next-tab'
   'g T': 'vim-mode-plus:previous-tab'
 
