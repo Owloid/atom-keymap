@@ -1,0 +1,7 @@
+'atom-text-editor':
+  'ctrl-space': 'autocomplete-plus:activate'
+
+'body atom-text-editor.autocomplete-active':
+  'ctrl-k': 'autocomplete-plus:move-up'
+  'ctrl-j': 'autocomplete-plus:move-down'
+  'escape': 'autocomplete-plus:cancel'
