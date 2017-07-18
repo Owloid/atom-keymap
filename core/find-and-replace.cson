@@ -29,7 +29,8 @@
     "ctrl-d": "find-and-replace:select-next",
     "ctrl-e": "find-and-replace:use-selection-as-find-pattern",
     "ctrl-u": "find-and-replace:select-undo",
-    "ctrl-k ctrl-d": "find-and-replace:select-skip"
+    # "ctrl-k ctrl-d": "find-and-replace:select-skip"
+    "ctrl-k ctrl-d": "unset!"
   },
   ".platform-darwin .find-and-replace": {
     "shift-enter": "find-and-replace:show-previous",

@@ -1,0 +1,4 @@
+
+'body':
+  'ctrl-u': 'vim-mode-plus:scroll-half-screen-up'
+  'ctrl-d': 'vim-mode-plus:scroll-half-screen-down'
